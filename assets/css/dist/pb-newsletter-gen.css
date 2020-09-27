@@ -1,0 +1,256 @@
+.calendar {
+  background: #FFF;
+  cursor: pointer;
+}
+
+.calendar .prev-month,
+.calendar .next-month {
+  color: #FFF;
+  font-weight: bold;
+  position: absolute;
+}
+
+.calendar .prev-month {
+  left: 5px;
+}
+
+.calendar .next-month {
+  right: 5px;
+}
+
+.calendar .current-month {
+  background-color: #F00;
+  color: #FFF;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.calendar .day {
+  color: #CCC;
+}
+
+.calendar .today .day {
+  color: #000;
+  font-weight: 900;
+}
+
+.message {
+  background-color: #FFF;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 5% 1% 0;
+  opacity: 0.9;
+  padding: 1%;
+  position: relative;
+  vertical-align: top;
+  width: 29%;
+  min-height: 100px;
+}
+
+.message .content {
+  display: block;
+  z-index: 1;
+}
+
+.message .cta-btns {
+  display: inline-block;
+  position: absolute;
+  left: -50px;
+  top: 25%;
+  width: 50px;
+  z-index: -1;
+}
+
+.message .cta-btns .add-btn {
+  border-top-left-radius: 20px;
+  color: green;
+}
+
+.message .cta-btns .delete-btn {
+  border-bottom-left-radius: 20px;
+  color: red;
+}
+
+.message .cta-btns .add-btn,
+.message .cta-btns .delete-btn {
+  background-color: white;
+  cursor: pointer;
+  height: 30px;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  width: 50px;
+}
+
+.message .cta-btns .add-btn:hover,
+.message .cta-btns .delete-btn:hover {
+  opacity: 0.8;
+}
+
+.message:nth-child(n+5) {
+  display: none;
+}
+
+.newsletter-container h2 {
+  color: white;
+  display: inline-block;
+  margin-left: 1%;
+  text-align: center;
+  width: 100%;
+}
+
+.newsletter-container h3 {
+  background: white;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 1%;
+  opacity: 0.9;
+  padding: 1%;
+}
+
+.newsletter-container p {
+  color: #FFF;
+  text-align: center;
+  margin: 1% 0;
+}
+
+.newsletter-container ul {
+  padding: 0 1%;
+}
+
+.newsletter-container .warning {
+  background-color: pink !important;
+}
+
+.articles-list li:hover,
+.newsletter-list li:hover {
+  opacity: 0.8;
+}
+
+.articles-list li img,
+.newsletter-list li img {
+  width: 100%;
+}
+
+.step1 .message-form {
+  width: 100%;
+}
+
+.step1 .message-form p {
+  background-color: #FFF;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 5% 1% 0;
+  opacity: 0.9;
+  padding: 1%;
+  position: relative;
+  vertical-align: top;
+  width: 29%;
+  color: #000;
+  display: block;
+  margin: 1% auto;
+  text-align: left;
+  width: 80%;
+}
+
+.step1 .message-form .form {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.step1 .message-form .js-messages {
+  display: none;
+  vertical-align: top;
+  width: 100%;
+}
+
+.step3 .newsletter-list p {
+  background-color: #FFF;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 5% 1% 0;
+  opacity: 0.9;
+  padding: 1%;
+  position: relative;
+  vertical-align: top;
+  width: 29%;
+  display: block;
+  margin: 1% auto;
+  width: 30%;
+}
+
+.step3 .js-response-msg {
+  color: #FFF;
+  text-align: center;
+}
+
+.step3 .send-button-container {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.step1,
+.step2,
+.step3 {
+  background-color: #3484da;
+  border-radius: 20px;
+  display: inline-block;
+  margin-right: 1%;
+  min-height: 640px;
+  vertical-align: top;
+  width: 30%;
+}
+
+.step1 li,
+.step2 li,
+.step3 li {
+  background-color: #FFF;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 5% 1% 0;
+  opacity: 0.9;
+  padding: 1%;
+  position: relative;
+  vertical-align: top;
+  width: 29%;
+  min-height: 180px;
+}
+
+.step1 li h4,
+.step2 li h4,
+.step3 li h4 {
+  margin: 1px 0;
+}
+
+.filter-container {
+  text-align: center;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-text {
+  border: none !important;
+  border-bottom: 1px solid #3484da !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  width: 100%;
+}
+
+.wp-admin select {
+  width: 100%;
+}

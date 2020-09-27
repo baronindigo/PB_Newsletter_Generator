@@ -1,0 +1,20 @@
+{
+  "name": "pb-newsletter-generator",
+  "version": "1.0.0",
+  "description": "A plugin using Active Campaign to generate Newsletters",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "compile-styles": "node-sass --output-style expanded --precision 6 assets/sass/pb-newsletter-gen.scss assets/css/dist/pb-newsletter-gen.css",
+    "css-minify": "cleancss --level 1 --format breaksWith=lf --output assets/css/dist/pb-newsletter-gen.min.css assets/css/dist/pb-newsletter-gen.css",
+    "process-styles": "npm run compile-styles && npm run css-minify"
+  },
+  "author": "By PebbleBed - Titans",
+  "license": "ISC",
+  "dependencies": {
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.14.1"
+  }
+}

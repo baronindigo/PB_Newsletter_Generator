@@ -1,0 +1,153 @@
+$color-gray       : #CCC;
+$color-white      : #FFF;
+$color-black      : #000;
+$color-red        : #F00;
+$color-background : #3484da;
+
+@import "mixins";
+
+@import "modules/all";
+
+.newsletter-container {
+
+	h2 {
+		color: white;
+		display: inline-block;
+		margin-left: 1%;
+		text-align: center;
+		width: 100%;
+	}
+
+	h3 {
+		@include header;
+	}
+
+	p {
+		color: $color-white;
+		text-align: center;
+		margin: 1% 0;
+
+	}
+
+	ul {
+		padding: 0 1%;
+	}
+
+	.warning {
+		background-color: pink !important;
+	}
+
+}
+
+.articles-list,
+.newsletter-list {
+
+	li {
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+}
+.step1 {
+
+	.message-form {
+		width: 100%;
+
+		p {
+			@include cloud;
+			color: $color-black;
+			display: block;
+			margin: 1% auto;
+			text-align: left;
+			width: 80%;
+		}
+
+		.form {
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+		}
+
+		.js-messages {
+			display: none;
+			vertical-align: top;
+			width: 100%;
+
+		}
+	}
+
+	
+}
+
+.step3 {
+	.newsletter-list {
+		p {
+			@include cloud;
+			display: block;
+			margin: 1% auto;
+			width: 30%;
+		}
+	}
+
+	.js-response-msg {
+		color: $color-white;
+		text-align: center;
+	}
+
+	.send-button-container {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+		width: 100%;
+	}
+}
+
+.step1,
+.step2,
+.step3 {
+	background-color: $color-background;
+	border-radius: 20px;
+	display: inline-block;
+	margin-right: 1%;
+	min-height: 640px;
+	vertical-align: top;
+	width: 30%;
+
+	li {
+		@include cloud;
+		min-height: 180px;
+
+		h4 {
+			margin: 1px 0;
+		}
+
+	}
+}
+
+.filter-container {
+	text-align: center;
+}
+
+.form-label {
+	display: block;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.form-text {
+	@include form-element;
+}
+
+.wp-admin {
+
+	select {
+		width: 100%;
+	}
+
+}

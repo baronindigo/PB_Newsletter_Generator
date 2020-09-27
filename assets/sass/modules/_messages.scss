@@ -1,0 +1,49 @@
+.message {
+	@include cloud;
+	min-height: 100px;
+
+	.content {
+		display: block;
+		z-index: 1;
+	}
+
+	.cta-btns {
+		display: inline-block;
+		position: absolute;
+		left: -50px;
+		top: 25%;
+		width: 50px;
+		z-index: -1;
+
+		.add-btn {
+			border-top-left-radius: 20px;
+			color: green;
+		}
+
+		.delete-btn {
+			border-bottom-left-radius: 20px;
+			color: red;
+		}
+
+		.add-btn,
+		.delete-btn {
+			background-color: white;
+			cursor: pointer;
+			height: 30px;
+			display: inline-block;
+			font-weight: bold;
+			line-height: 30px;
+			text-align: center;
+			width: 50px;
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+
+}
+
+.message:nth-child(n+5) {
+	display: none;
+}
